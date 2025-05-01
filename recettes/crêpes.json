@@ -1,0 +1,11 @@
+{
+    "nom": "Pâte à crêpes",
+    "ingredients": [
+        {"nom": "Farine", "quantite": 250, "unite": "g"},
+        {"nom": "Lait", "quantite": 500, "unite": "ml"}
+    ],
+    "etapes": [
+        "Mélanger la farine et les œufs",
+        "Ajouter le lait progressivement"
+    ]
+}
