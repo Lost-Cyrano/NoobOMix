@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recette</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="recipeHeader">
+            <h1 id="recipeTitle"></h1>
+            <div class="multiplier">
+                <label>Multiplicateur : </label>
+                <input type="number" id="multiplier" value="1" min="1">
+            </div>
+        </div>
+        
+        <div class="columns">
+            <div class="ingredients-column">
+                <h2>Ingrédients</h2>
+                <ul id="ingredientsList"></ul>
+            </div>
+            
+            <div class="steps-column">
+                <h2>Préparation</h2>
+                <ol id="stepsList"></ol>
+            </div>
+        </div>
+    </div>
+    <script src="recettes.js"></script>
+</body>
+</html>
