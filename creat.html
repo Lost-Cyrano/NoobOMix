@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Créer une recette</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Créer une nouvelle recette</h1>
+        <form id="recipeForm">
+            <input type="text" id="recipeName" placeholder="Nom de la recette" required>
+            
+            <div id="ingredients">
+                <h3>Ingrédients</h3>
+                <div class="ingredient">
+                    <input type="text" placeholder="Nom" class="ingredient-name" required>
+                    <input type="number" placeholder="Quantité" class="ingredient-quantity" required>
+                    <input type="text" placeholder="Unité (g, ml, etc.)" class="ingredient-unit">
+                </div>
+            </div>
+            <button type="button" onclick="addIngredient()">+ Ajouter un ingrédient</button>
+
+            <div id="steps">
+                <h3>Étapes de préparation</h3>
+                <div class="step">
+                    <textarea placeholder="Description de l'étape"></textarea>
+                </div>
+            </div>
+            <button type="button" onclick="addStep()">+ Ajouter une étape</button>
+
+            <button type="submit">Générer la recette</button>
+        </form>
+    </div>
+    <script src="creat.js"></script>
+</body>
+</html>
